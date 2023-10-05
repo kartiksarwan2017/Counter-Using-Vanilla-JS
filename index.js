@@ -10,7 +10,7 @@ const btns = document.querySelectorAll('.btn');
 
 some methods of array are not applicable in the nodelist
 */
-console.log(btns);
+// console.log(btns);
 
 /* rather than selecting the individual buttons using selectors we could directly use forEach() method 
 
@@ -40,14 +40,17 @@ btns.forEach((btn) => {
 
         if(count > 0){
             value.style.color = "green";
+            document.body.style.backgroundColor = "lightgreen";
         }
 
         if(count < 0){
             value.style.color = "red";
+            document.body.style.backgroundColor = "#ffcccb";
         }
 
         if(count === 0){
             value.style.color = "#222";
+            document.body.style.backgroundColor = "white";
         }
 
         value.textContent = count;
